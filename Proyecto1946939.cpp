@@ -27,17 +27,14 @@ int main()
     switch (op)
     {
     case 1://Agregar articulo
-        cout << "Agregar 1, 2 o 3 articulos\n";
-        cin >> op2;
+        // no ocupas dos switch soolo el uso del return main
 
-        switch (op2)
-        {
-        case 1:
+        
             cout << "Numero del articulo\n";
             cin >> nua;
             cout << "Nombre del articulo\n";
             cin >> nart;
-            cout << "Año de lanzamiento\n";
+            cout << "AÃ±o de lanzamiento\n";
             cin >> f;
             cout << "Clasificacion\n";
             cin >> clas;
@@ -51,127 +48,12 @@ int main()
             cin >> gen;
             cout << "Precio\n";
             cin >> precio;
-
+// falto calcular el iva u el total con iva
+            // iva=precio*.16
+            //cout<<iva
+            //total=precio+iva;
+            //cout<<total
             return main();
-            break;
-
-        case 2:
-
-            cout << "Ingresa primer articulo\n";
-
-            cout << "Numero del articulo\n";
-            cin >> nua;
-            cout << "Nombre del articulo\n";
-            cin >> nart;
-            cout << "Año de lanzamiento\n";
-            cin >> f;
-            cout << "Clasificacion\n";
-            cin >> clas;
-            cout << "Caracteristicas\n";
-            cin.ignore();
-            getline(cin, cart);
-            cout << "Descripcion\n";
-            cin.ignore();
-            getline(cin, des);
-            cout << "Genero\n";
-            cin >> gen;
-            cout << "Precio\n";
-            cin >> precio;
-
-            cout << endl<<"Ingresa segundo articulo\n";
-
-            cout << "Numero del articulo\n";
-            cin >> nua2;
-            cout << "Nombre del articulo\n";
-            cin >> nart2;
-            cout << "Año de lanzamiento\n";
-            cin >> f2;
-            cout << "Clasificacion\n";
-            cin >> clas2;
-            cout << "Caracteristicas\n";
-            cin.ignore();
-            getline(cin, cart2);
-            cout << "Descripcion\n";
-            cin.ignore();
-            getline(cin, des2);
-            cout << "Genero\n";
-            cin >> gen2;
-            cout << "Precio\n";
-            cin >> precio2;
-
-            return main();
-            break;
-        case 3:
-            cout << "Ingresa primer articulo\n";
-
-            cout << "Numero del articulo\n";
-            cin >> nua;
-            cout << "Nombre del articulo\n";
-            cin >> nart;
-            cout << "Año de lanzamiento\n";
-            cin >> f;
-            cout << "Clasificacion\n";
-            cin >> clas;
-            cout << "Caracteristicas\n";
-            cin.ignore();
-            getline(cin, cart);
-            cout << "Descripcion\n";
-            cin.ignore();
-            getline(cin, des);
-            cout << "Genero\n";
-            cin >> gen;
-            cout << "Precio\n";
-            cin >> precio;
-
-            cout << endl << "Ingresa segundo articulo\n";
-
-            cout << "Numero del articulo\n";
-            cin >> nua2;
-            cout << "Nombre del articulo\n";
-            cin >> nart2;
-            cout << "Año de lanzamiento\n";
-            cin >> f2;
-            cout << "Clasificacion\n";
-            cin >> clas2;
-            cout << "Caracteristicas\n";
-            cin.ignore();
-            getline(cin, cart2);
-            cout << "Descripcion\n";
-            cin.ignore();
-            getline(cin, des2);
-            cout << "Genero\n";
-            cin >> gen2;
-            cout << "Precio\n";
-            cin >> precio2;
-
-            cout << endl << "Ingresa tercer articulo\n";
-
-            cout << "Numero del articulo\n";
-            cin >> nua3;
-            cout << "Nombre del articulo\n";
-            cin >> nart3;
-            cout << "Año de lanzamiento\n";
-            cin >> f3;
-            cout << "Clasificacion\n";
-            cin >> clas3;
-            cout << "Caracteristicas\n";
-            cin.ignore();
-            getline(cin, cart3);
-            cout << "Descripcion\n";
-            cin.ignore();
-            getline(cin, des3);
-            cout << "Genero\n";
-            cin >> gen3;
-            cout << "Precio\n";
-            cin >> precio3;
-
-            return main();
-            break;
-
-        default:
-            cout << "Ingresa una opcion valida\n";
-            return main();
-        }
 
         break;
 
